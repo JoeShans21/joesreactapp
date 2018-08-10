@@ -2,7 +2,6 @@
 	$arr = []
 	$conn = mysqli_connect("sql9.freemysqlhosting.net", "sql9251151", "w73z9SwvYP", "sql9251151");
 	$sql="SELECT * FROM mobile_messages";
-    include_once 'includes/dbh.inc.php';
     $result=mysqli_query($conn,$sql);
     $rowcount=mysqli_num_rows($result);
     for ($x=$rowcount; $x>=1; $x--){
