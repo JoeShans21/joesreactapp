@@ -5,7 +5,7 @@
     $result=mysqli_query($conn,$sql);
     $rowcount=mysqli_num_rows($result);
     for ($x=$rowcount; $x>=1; $x--){
-        $sql2="SELECT * FROM posts WHERE ID='$x'";
+        $sql2="SELECT * FROM mobile_messages WHERE ID='$x'";
         $result=mysqli_fetch_assoc(mysqli_query($conn,$sql2));
         $content=$result['Content'];
         $author=$result['Author'];
